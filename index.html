@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/co/4.1.0/index.js"></script>
+    <script type="module" src="main.js"></script>
+  </head>
+  <body id="root">
+    <h1 id="header">Customer Management System</h1>
+    <div class="container">
+      <form novalidate id="formDiv">
+        <table>
+          <tr>
+            <td><label for="firstName">First Name </label></td>
+            <td>
+              <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                required
+                placeholder="Enter your first name"
+              />
+              <p id="firstName_Err" class="error-msg">
+                First Name cannot be Empty
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="lastName">Last Name </label></td>
+            <td>
+              <input
+                type="text"
+                id="lastName"
+                name="lastName"
+                placeholder="Enter your last name"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="email">Email </label></td>
+            <td>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="Enter your email"
+              />
+              <p id="email_Err_empty" class="error-msg">
+                Email Id should not be empty
+              </p>
+              <p id="email_Err_frmt" class="error-msg">
+                Email Id must be in proper format
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="mobileNo">Mobile No </label></td>
+            <td>
+              <input
+                type="tel"
+                id="mobileNo"
+                name="mobileNo"
+                required
+                placeholder="Enter your mobile"
+              />
+              <p id="mobileNo_Err_empty" class="error-msg">
+                Mobile number must not be empty
+              </p>
+              <p id="mobileNo_Err_frmt" class="error-msg">
+                Mobile number should be 10 digits
+              </p>
+            </td>
+          </tr>
+        </table>
+
+        <div class="btn-class">
+          <input id="submit-btn" type="submit" value="ADD" />
+        </div>
+      </form>
+    </div>
+
+    <div id="data" class="tableData"></div>
+
+    <script>
+      const styleHeader = document.querySelector("#header");
+      styleHeader.style.color = "cyan";
+      styleHeader.style.textAlign = "center";
+    </script>
+    <!-- <script>
+      function fName() {
+        document.getElementById("firstName_Err").textContent = "";
+      }
+    </script> -->
+  </body>
+</html>

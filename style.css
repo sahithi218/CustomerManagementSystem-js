@@ -1,0 +1,39 @@
+.container {
+  width: 500px;
+  margin: auto;
+  border: 2px solid;
+  padding: 20px;
+}
+.btn-class {
+  text-align: center;
+  margin-top: 5px;
+}
+#submit-btn {
+  padding: 5px 20px;
+}
+.tableData {
+  margin-top: 5%;
+  padding: 10px;
+}
+input {
+  padding: 5px 5px 5px 10px;
+}
+table {
+  margin: auto;
+}
+table,
+th,
+tr,
+td {
+  padding: 15px 10px;
+  border-collapse: collapse;
+}
+
+.error-msg {
+  color: red;
+  position: absolute;
+  margin: 0px;
+  margin-top: 2px;
+  font-size: 14px;
+  display: none;
+}
